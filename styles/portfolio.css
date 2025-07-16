@@ -7,6 +7,9 @@
     "wdth" 100;
 }
 /* shared styles */
+.secondary-bg{
+    background-color: #FFF8F3;
+}
 .text-primary{
     color: #FD6E0A;
 }
@@ -26,7 +29,11 @@
     font-size: 20px;
     font-weight:700;
     border-radius: 5px;
+    border: none;
 
+}
+.text-center{
+    text-align: center;
 }
 .header{
     background-image: url('../images/developer.png'),url('../images/header_bg.png');
@@ -81,4 +88,108 @@ nav li a{
 }
 .banner-description{
     font-size: 18px;
+}
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.about{
+    text-align: center;
+    padding: 130px 150px;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+.section-title{
+    font-weight: bold;
+    font-weight: 35px;
+    color: #181818;
+}
+.section-description{
+    font-size: 18px;
+    color: #757575;
+}
+.about-items{
+display: flex;
+justify-content: space-around;
+}
+.item-title{
+    font-size: 20px;
+}
+.item-description{
+    font-size: 20px;
+    font-weight: bold;
+}
+.skills{
+    margin-bottom: 130px;
+}
+.skill{
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+ 
+    
+}
+.skill-content{
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+}
+
+.resume-columes{
+    display: flex;
+    gap: 24px;
+}
+.resume-colume-title{
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.colume-title{
+    font-weight: 700;
+    font-size: 25px;
+}
+.colume-sub-title{
+    font-weight: 600;
+    font-size: 20px;
+
+}
+footer{
+    display: flex;
+    padding: 130px 230px;
+    gap: 20px;
+    margin-top: 140px;
+
+}
+.footer-column{
+    width: 50%;
+}
+footer input[type="text"], footer input[type="email"] , footer textarea{
+    display: block;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100%;
+    padding: 10px ;
+    color: #757575;
+}
+.hide{
+    display: none;
+}
+@media screen and (max-width:576px){
+    .skill , .resume-columes , footer ,.about-items ,.banner ,nav{
+        flex-direction: column;
+    } 
+    footer , .about{
+        padding: 20px;
+    }
+    .banner, nav{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"] , footer textarea{
+        width: calc(100% - 40px);
+    }
 }
